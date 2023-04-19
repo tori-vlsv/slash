@@ -1,0 +1,34 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    [
+      "@babel/preset-typescript"
+    ]
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "src": "./src",
+          "styles": "./src/assets/styles",
+          "images": "./src/assets/images",
+          "files": "./src/assets/files",
+          "videos": "./src/assets/videos",
+          "js": "./src/assets/js"
+        }
+      }
+    ]
+  ],
+  "ignore": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,20 @@
+@import "./utils/reset";
+
+/*
+  Базовые стили
+*/
+@import "./base/variables";
+@import "./base/global";
+
+/*
+  Шрифты и типография
+*/
+@import "./base/fonts";
+@import "./base/typography";
+
+/*
+  Компоненты
+*/
+@import "./components/header";
+@import "./components/hero";
+@import "./components/card";

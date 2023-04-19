@@ -1,0 +1,65 @@
+.hero {
+  padding: 34px 0 80px;
+  position: relative;
+  &__steps {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+  }
+  &__step {
+    width: 12px;
+    cursor: pointer;
+    height: 4px;
+    background-color: $blue-300;
+    will-change: width;
+    transition: width .3s;
+    &.active {
+      width: 32px;
+      background-color: $blue-400;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0 auto;
+    margin-top: 16px;
+    text-align: center;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 16px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero { 
+    &__title {
+      font-size: 24px;
+      line-height: 29px
+    }
+    &__text {
+      margin-top: 19px;
+      line-height: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .hero {
+    padding: 16px 0 40px;
+    &__title {
+      font-size: 22px;
+      line-height: 26px
+    }
+    &__text {
+      font-size: 13px;
+      line-height: 18px;
+      padding: 0 12px;
+      margin-top: 16px;
+    }
+  }
+}

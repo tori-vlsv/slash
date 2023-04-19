@@ -1,0 +1,30 @@
+html,
+body {
+  font-family: 'Euclid Circular A';
+  color: $black-400;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.wrapper-sm {
+  max-width: 592px;
+  margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .wrapper {
+    padding: 0 8px;
+  }
+}
