@@ -1,34 +1,63 @@
-form(action="#").card
+form.card(action="#")
   .card__containers
     .card__bubble 3 digits on the back of your card.
       .card__bubble__close
-        img(src="/assets/images/close.svg", alt="close")
+        img(src="/assets/images/close.svg" alt="close")
     .card__container.card__front
       .card__logo
         img(src="/assets/images/chip.svg" alt="chip")
       .card__content
         label.card__label.card__number
-          .card__name 
+          .card__name
             span Card number
-          input.card__input.cc-number-input(type="test" name="nubmer" placeholder="1234 1234 1234 1234" required maxlength="19" autocomplete="off")
+          input.card__input.cc-number-input(
+            type="test"
+            placeholder="1234 1234 1234 1234"
+            autocomplete="off"
+            maxlength="19"
+            name="nubmer"
+            required
+          )
         label.card__label.card__title
-          .card__name 
+          .card__name
             span Cardholder name
-          input.card__input(type="text" name="name" placeholder="John Smith" required)
+          input.card__input(
+            type="text"
+            placeholder="John Smith"
+            name="name"
+            required
+          )
         label.card__label.card__date
-          .card__name 
+          .card__name
             span Expiry date
-          input.card__input.cc-expiry-input(type="text" name="date" placeholder="08/29" required maxlength="5" autocomplete="off")
+          input.card__input.cc-expiry-input(
+            type="text"
+            placeholder="08/29"
+            autocomplete="off"
+            maxlength="5"
+            name="date"
+            required
+          )
     .card__container.card__back
       .card__content
         label.card__label.card__cvc
-          .card__name.card__name-svg 
+          .card__name.card__name-svg
             span CVV/CVC
-            img.card__attention(src="/assets/images/attention.svg" alt="attention")
-          input.card__input.cc-cvc-input(type="text" name="cvc" placeholder="123" required maxlength="3" autocomplete="off")
+            img.card__attention(
+              src="/assets/images/attention.svg"
+              alt="attention"
+            )
+          input.card__input.cc-cvc-input(
+            type="text"
+            placeholder="123"
+            autocomplete="off"
+            maxlength="3"
+            name="cvc"
+            required
+          )
   .card__footer
     .card__payment
-      button(type="submit").card__button
+      button.card__button(type="submit")
         span Connect
         img(src="/assets/images/security.svg" alt="security")
       p.card__text We'll charge and refund €1 to check if the card is valid.

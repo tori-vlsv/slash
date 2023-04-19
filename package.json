@@ -10,7 +10,7 @@
     "develop": "webpack serve --env mode=development --config ./webpack.config.js --progress",
     "dev": "yarn develop",
     "prettier-write:scss": "prettier --write './src/assets/styles/**/*.scss' && node node_scripts/scss-clear",
-    "prettier-write:pug": "prettier --write './src/views/**/*.pug' && node ./node_scripts/pug-clear",
+    "prettier-write:pug": "node ./node_scripts/pug-clear && prettier --write './src/views/**/*.pug'",
     "lint-all": "yarn prettier-write:scss && yarn prettier-write:pug"
   },
   "devDependencies": {

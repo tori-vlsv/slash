@@ -68,7 +68,7 @@
   &__attention {
     cursor: pointer;
   }
-  &__name { 
+  &__name {
     &-svg {
       display: flex;
       gap: 2px;
@@ -121,7 +121,7 @@
     background-color: $blue-400;
     color: $white;
     will-change: background-color;
-    transition: background-color .3s;
+    transition: background-color 0.3s;
     &:hover {
       background-color: $blue-hover;
     }
@@ -140,7 +140,7 @@
   }
   &__bubble {
     display: none;
-    background: url('../../assets/images/bubble.svg') no-repeat;
+    background: url("../../assets/images/bubble.svg") no-repeat;
     position: absolute;
     width: 174px;
     height: 114px;
@@ -161,10 +161,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .card { 
+  .card {
     margin-top: 73px;
     &__bubble {
-      background: url('../../assets/images/bubble-mobile.svg');
+      background: url("../../assets/images/bubble-mobile.svg");
       width: 190px;
       height: 113px;
       right: 6px;

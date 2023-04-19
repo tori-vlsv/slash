@@ -13,7 +13,7 @@
     height: 4px;
     background-color: $blue-300;
     will-change: width;
-    transition: width .3s;
+    transition: width 0.3s;
     &.active {
       width: 32px;
       background-color: $blue-400;
@@ -36,10 +36,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero { 
+  .hero {
     &__title {
       font-size: 24px;
-      line-height: 29px
+      line-height: 29px;
     }
     &__text {
       margin-top: 19px;
@@ -53,7 +53,7 @@
     padding: 16px 0 40px;
     &__title {
       font-size: 22px;
-      line-height: 26px
+      line-height: 26px;
     }
     &__text {
       font-size: 13px;
